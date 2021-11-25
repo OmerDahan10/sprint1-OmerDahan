@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mine Sweeper Omer Dahan</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body onload="init()" oncontextmenu="return false">
+    <h1>Mine Sweeper</h1>
+    <button class="reset" onclick="restart()">😁</button>
+    <div class="board">
+
+    </div>
+    <div class="utils">
+        <button class="hint" onclick="hint()">💡💡💡</button> |
+        <button class="life">❤️❤️❤️</button> | 
+        <button class="time">Time</button> |
+        <button class="safe" onclick="safeClick()">Safe(<span>3</span>)</button>
+
+
+    </div>
+    <div class="level"> Choose level:
+
+        <button onclick="level(4,2)">Easy(4)</button> |
+        <button onclick="level(8,12)">Hard(8)</button> |
+        <button onclick="level(12,30)">Xtreme(12)</button> |
+        <button onclick="sevenBoom()">7 Boom!</button>
+
+    </div>
+
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+    <table class="best">
+        <thead>
+            <th>Level</th>
+            <th>Best Score</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td class="E">Easy</td>
+                <td class="Easy E"></td>
+            </tr>
+            <tr>
+                <td class="H">Hard</td>
+                <td class="Hard H"></td>
+            </tr>
+            <tr>
+                <td class="EX" >EXtreme</td>
+                <td class="Extreme EX" ></td>
+            </tr>
+            
+        </tbody>
+    </table>
+
+    <div class="footer">&#10017 Omer Dahan &#169 &#10017</div>
+</body>
+
+</html>

@@ -1,0 +1,208 @@
+body{
+    text-align: center;
+    background-image: url(../img/clouds.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    
+}
+h1 {
+    font-family:Copperplate, Papyrus, fantasy;
+    font-size: 50px;
+    font-weight: 1000;
+    
+}
+.board table{
+    margin: auto;
+    border: rgb(33, 105, 30) solid 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    box-shadow: 0px -14px 31px 6px rgba(255,239,56,0.95);
+}
+.hint {
+    height: 40px;
+    width: 90px;
+    box-sizing: border-box;
+    margin: 2px;
+    background-color: white;
+    border: lightblue 4px solid;
+    border-radius: 10px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+    /* display: inline; */
+    margin-top: 20px;
+}
+
+.hint:hover{
+    cursor: pointer;
+    background-color: rgb(128, 203, 228);
+}
+.safe {
+    height: 40px;
+    width: 90px;
+    box-sizing: border-box;
+    margin: 2px;
+    background-color: white;
+    border: lightblue 4px solid;
+    border-radius: 10px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+    /* display: inline; */
+    margin-top: 20px;
+}
+
+.safe:hover{
+    cursor: pointer;
+    background-color: rgb(128, 203, 228);
+}
+.life {
+    height: 40px;
+    width: 90px;
+    box-sizing: border-box;
+    margin: 2px;
+    background-color: white;
+    border: lightblue 4px solid;
+    border-radius: 10px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+    /* display: inline; */
+    margin-top: 20px;
+}
+.time{
+    height: 40px;
+    width: 90px;
+    box-sizing: border-box;
+    margin: 2px;
+    background-color: white;
+    border: lightblue 4px solid;
+    border-radius: 10px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+    /* display: inline; */
+    margin-top: 20px; 
+}
+.utils{
+    font-size: 20px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+}
+
+.reset {
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    font-size: xx-large;
+    padding: 3px;
+    box-sizing: border-box;
+    margin-bottom: 10px;
+    background-color:rgba(255, 238, 56, 0);
+    border: none;
+
+}
+.reset:hover{
+    cursor: pointer;
+    background-color:rgba(255, 238, 56, 0.555);
+}
+table td, tr{
+    /* border: black double 3px; */
+    height: 50px;
+    width:50px;
+    background-color: rgb(119, 111, 111);
+}
+
+table .cell {
+    background-color: rgb(47, 148, 47);
+    height: 50px;
+    width:50px;
+    padding: 3px;
+    border-radius: 5px;
+    /* border: double black 3px; */
+    font-size:large;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight: 1000;
+    box-sizing:border-box;
+    text-align: center;
+    cursor: pointer;
+    /* opacity: 0; */
+
+}
+.cell:nth-child(even){
+    background-color: rgb(55, 196, 42);
+}
+
+table .cell.opened {
+    transition: 0.2s;
+    background-color:rgb(204, 150, 103);
+}
+
+.level{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 20px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+}
+.level button {
+    height: 40px;
+    width: 90px;
+    box-sizing: border-box;
+    margin: 2px;
+    background-color: white;
+    border: lightblue 4px solid;
+    border-radius: 10px;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+}
+
+.level button:hover{
+    cursor: pointer;
+    background-color: rgb(128, 203, 228);
+}
+
+.footer{
+    text-align: center;
+    position:fixed;
+    bottom: 0;
+    left: 10px;
+    /* margin: auto; */
+    /* width: 100%; */
+    
+}
+
+.best{
+    margin: auto;
+    border: rgb(33, 105, 30) solid 5px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+}
+th {
+    background-color: lightblue;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+}
+.E {
+    background-color: rgb(67, 121, 13);
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+}
+
+.H {
+    background-color: rgb(104, 189, 20);
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+}
+
+.EX {
+    
+    background-color: chartreuse;
+    font-family: Copperplate, Papyrus, fantasy;
+    font-weight:bolder;
+    font-size: 15px;
+}
